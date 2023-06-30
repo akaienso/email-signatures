@@ -2,19 +2,19 @@ name: Upload to WebDAV
 on:
   push:
     branches:
-      - main
+      - stable
 
 jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@stable
         name: Checkout
       - uses: bxb100/action-upload-webdav@v1
         with:
           webdav_address: ${{secrets.WEBDAV_ADDRESS}}
           webdav_username: ${{secrets.WEBDAV_USERNAME}}
           webdav_password: ${{secrets.WEBDAV_PASSWORD}}
-          webdav_upload_path: "/signatures"
+          webdav_upload_path: "/signatures/stable"
           files: "./**"
           
