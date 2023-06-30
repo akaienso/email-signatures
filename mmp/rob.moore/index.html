@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rob Moore - Standard Email Signature</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4bed7be84e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <h3>Standard Email Signatures:</h3>
+      <nav>
+        <ul>
+          <li><a href="full-signature.html"></a>Primary Signature</li>
+          <li><a href="reply-signature.html">Reply Signature</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- UI Tools -->
+      <div class="note" id="further-instructions">
+        <h3>Add or edit your signature in Gmail</h3>
+        <p>
+          Signature settings in Gmail are located in
+          <strong
+            ><a
+              href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#settings"
+              target="settings"
+              >Settings</a
+            >
+            >
+            <a
+              href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#settings/general"
+              target="settings"
+              >General</a
+            ></strong
+          >
+          roughly two-thirds of the way down the page.
+        </p>
+        <img
+          title="Click to enlarge."
+          style="width: 100%; cursor: zoom-in;"
+          onclick="onClick(this)"
+          class="sigvid-hover-opacity"
+          src="../img/add-primary.gif"
+          alt="Video showing location and steps to create signature."
+        />
+      </div>
+      <!-- Modal Scaffolding -->
+      <div
+        id="sigvid-modal"
+        class="sigvid-modal"
+        onclick="this.style.display='none'"
+      >
+        <span
+          class="sigvid-button sigvid-hover-red sigvid-xlarge sigvid-display-topright"
+          >&times;</span
+        >
+        <div class="sigvid-modal-content sigvid-animate-zoom">
+          <img style="cursor: zoom-out;" id="sigvid" style="width: 100%;" />
+        </div>
+      </div>
+    </main>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
