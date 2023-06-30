@@ -8,6 +8,8 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@main
+        name: Checkout
       - uses: bxb100/action-upload-webdav@v1
         with:
           webdav_address: ${{ secrets.WEBDAV_ADDRESS }}
