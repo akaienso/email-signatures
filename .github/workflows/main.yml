@@ -10,10 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@main
         name: Checkout
-      - uses: bxb100/action-upload-webdav@v1
+      - uses: bxb100/action-upload-webdav@main
         with:
-          webdav_address: ${{ secrets.WEBDAV_ADDRESS }}
-          webdav_username: ${{ secrets.WEBDAV_USERNAME }}
-          webdav_password: ${{ secrets.WEBDAV_PASSWORD }}
-          webdav_upload_path: "signatures"
-          files: "./**"
+          provider: webdav
+          provider_options:
+            endpoint: ${{ secrets.WEBDAV_ADDRESS }}
+            username: ${{ secrets.WEBDAV_USERNAME }}
+            password: ${{ secrets.WEBDAV_PASSWORD }}
+            root: "/signatures/"
+          include: "./"
