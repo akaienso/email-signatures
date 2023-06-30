@@ -1,6 +1,55 @@
 body {
-  background-color: rgb(59, 59, 59);
+  background-color: hsl(0, 0%, 27%);
   font-family: "Courier New", Courier, monospace;
+}
+
+/*SECTION - HEADER*/
+header {
+  background-color: hsl(0, 0%, 0%);
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #497094;
+}
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+header h1 span {
+  color: hsl(0, 0%, 27%);
+}
+header h1 span.mmp {
+  color: hsl(0, 34%, 53%);
+}
+header h1 span.rotary {
+  color: hsl(59, 34%, 53%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: hsl(209, 34%, 83%);
+}
+nav ul li.current-page {
+  color: hsl(209, 34%, 53%);
 }
 
 /*  All signature styles are inline to allow copying to Email client   */
