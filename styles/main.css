@@ -16,15 +16,19 @@ header {
 header h1 {
   font-size: 2rem;
   margin: 0;
+  color: rgb(69, 69, 69);
 }
-header h1 span {
-  color: hsl(0, 0%, 27%);
+header h1.mmp {
+  color: #497094;
 }
-header h1 span.mmp {
+header h1.mmp span {
   color: hsl(0, 34%, 53%);
 }
-header h1 span.rotary {
-  color: hsl(59, 34%, 53%);
+header h1.rotary {
+  color: #00A2E0;
+}
+header h1.rotary span {
+  color: #F7A81B;
 }
 
 nav {

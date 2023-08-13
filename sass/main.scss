@@ -16,11 +16,22 @@ header {
   h1 {
     font-size: 2rem;
     margin: 0;
-    span {
-      color: hsl(0, 0%, 27%);
-      &.mmp {color: hsl(0, 34%, 53%);}
-      &.rotary {color: hsl(59, 34%, 53%);}
+    color: rgb(69, 69, 69);
+
+    &.mmp {
+      color: #497094;
+      span {
+        color: hsl(0, 34%, 53%);
+      }
     }
+
+    &.rotary {
+      color: #00A2E0;
+      span {
+        color: #F7A81B;
+      }
+    }
+
   }
 }
 
@@ -43,11 +54,14 @@ nav {
         color: white;
 
         &:hover {
-          color:  hsl(209, 34%,83%);;
+          color: hsl(209, 34%, 83%);
+          ;
         }
       }
 
-      &.current-page {color: hsl(209, 34%,53%);}
+      &.current-page {
+        color: hsl(209, 34%, 53%);
+      }
     }
   }
 }
